@@ -21,7 +21,6 @@ def create_app():
 
     from .views import home, view, files
     app.add_url_rule('/', 'home', home, methods=['GET', 'POST'])
-    app.add_url_rule('/files/<file_name>', 'files', files, methods=['GET', 'POST', "PUT"])
     app.add_url_rule('/view/<fid>', 'view', view, methods=['GET'])
 
     return app
