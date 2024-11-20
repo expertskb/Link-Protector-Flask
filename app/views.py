@@ -47,6 +47,3 @@ def view(fid):
     return render_template('view.html', 
                            data=data,
                            links=links)
-    
-def files(filename):
-    return send_from_directory(os.path.join(app.root_path, 'files'), filename)
