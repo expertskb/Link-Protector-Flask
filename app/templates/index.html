@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SaveLinks - Effortless link protection for a Safer Web</title>
+            <link rel="icon" href="/storage/favicons/favicon.png?v=1728134678" />
+    
+    <!-- Fonts -->
+        
+    <!-- Scripts -->
+    <link rel="preload" as="style" href="https://savelinks.me/build/assets/app-mYWjnnd9.css" />
+    <link rel="stylesheet" href="https://savelinks.me/build/assets/app-mYWjnnd9.css" data-navigate-track="reload" />   
+
+
+
+        
+    
+</head>
+
+<body class="font-sans antialiased bg-primary-50">
+        <header wire:snapshot="{&quot;data&quot;:[],&quot;memo&quot;:{&quot;id&quot;:&quot;zbzXQmSmMZ0Ok23I4mpV&quot;,&quot;name&quot;:&quot;layout.navigation&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;0139fa8c367a9f94d24a726a259d908928378fb54f0c71506f2d26e8b48855fb&quot;}" wire:effects="[]" wire:id="zbzXQmSmMZ0Ok23I4mpV" x-data="{ open: false }" class="bg-white">
+    <!-- Primary Navigation Menu -->
+    <nav class="container flex justify-between py-3 md:py-4">
+        <!-- Logo -->
+        <a href="/" wire:navigate class="flex items-center shrink-0 gap-x-1">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="block w-auto text-primary-600" height="40">
+    <path
+        d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M14.28,14.08L12.26,16.1C11.66,16.7 10.87,17 10.08,17C9.29,17 8.5,16.7 7.9,16.1C6.7,14.9 6.7,12.95 7.9,11.74L9.15,10.5L9.14,11.06C9.14,11.5 9.21,11.95 9.36,12.37L9.41,12.5L9.04,12.87C8.76,13.15 8.6,13.53 8.6,13.92C8.6,14.32 8.76,14.69 9.04,14.97C9.6,15.53 10.57,15.53 11.13,14.97L13.14,12.96C13.43,12.67 13.58,12.3 13.58,11.91C13.58,11.5 13.43,11.14 13.15,10.86C13,10.71 12.9,10.5 12.9,10.29C12.9,10.08 13,9.88 13.15,9.73C13.45,9.42 14,9.43 14.28,9.73C14.86,10.31 15.18,11.08 15.18,11.9C15.18,12.73 14.86,13.5 14.28,14.08M17.1,11.26L15.85,12.5L15.86,11.94C15.86,11.5 15.79,11.06 15.64,10.64L15.6,10.5L15.96,10.13C16.25,9.85 16.4,9.5 16.4,9.08C16.4,8.69 16.25,8.32 15.97,8.04C15.4,7.47 14.43,7.47 13.87,8.04L11.86,10.05C11.58,10.33 11.42,10.7 11.42,11.1C11.42,11.5 11.57,11.86 11.86,12.14C12,12.29 12.1,12.5 12.1,12.71C12.1,12.93 12,13.13 11.85,13.28C11.7,13.44 11.5,13.5 11.29,13.5C11.09,13.5 10.88,13.43 10.72,13.28C9.5,12.08 9.5,10.12 10.72,8.92L12.74,6.9C13.95,5.7 15.9,5.7 17.1,6.9C17.68,7.5 18,8.26 18,9.08C18,9.9 17.68,10.68 17.1,11.26Z">
+    </path>
+</svg>
+            <strong class="text-2xl text-gray-800">SaveLinks</strong>
+        </a>
+
+        <!-- Navigation Links -->
+        <!--[if BLOCK]><![endif]-->            <div class="hidden space-x-2 sm:flex">
+                <!--[if BLOCK]><![endif]-->                    <a href="/" class="inline-flex items-center py-2 px-4 text-sm transition duration-150 ease-in-out rounded-lg decoration-2 font-semibold text-gray-900 underline decoration-primary-600 underline-offset-8">
+    Home
+</a>
+
+                <!--[if ENDBLOCK]><![endif]-->
+            </div>
+        <!--[if ENDBLOCK]><![endif]-->
+
+
+        </div>
+
+        <!-- Hamburger -->
+        <div class="flex items-center -me-2 sm:hidden">
+            <button @click="open = ! open"
+                class="inline-flex items-center justify-center p-2 text-gray-800 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:bg-gray-100">
+                <svg class="size-7" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Responsive Navigation Menu -->
+    <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
+        <div class="py-2 space-y-1">
+            <!--[if BLOCK]><![endif]-->                <a href="/" class="block w-full ps-3 pe-4 py-2 text-start text-sm font-medium transition duration-150 ease-in-out focus:outline-none text-primary-700 bg-primary-50 focus:text-primary-800 focus:bg-primary-100">
+    Home
+</a>
+
+        </div>
+
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+        </div>
+    </div>
+</header>
+    <!-- Page Heading -->
+            <div class="py-10 lg:py-20">
+    <div class="max-w-4xl mx-auto md:p-4">
+        <div class="max-w-2xl px-5 mx-auto mb-5">
+            <h1 class="mb-3 text-4xl font-bold text-center text-black lg:text-5xl">
+                <strong>Effortless link protection for a Safer Web</strong>
+            </h1>
+            <p class="max-w-md mx-auto text-center">Short your links effortlessly and fortify the web with our secure link management platform.</p>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+                {% for category, message in messages %}
+                {% if category == 'success' %}
+                <span class="mr-3">Success! Your links are now protected.</span>
+                {% endif %}
+
+                <div class="p-4 mt-3 text-sm border border-l-4 rounded-lg">
+                    <a href="{{ message }}" class="font-medium underline break-words text-primary-600" target="_blank">{{ message }}</a>
+                </div>
+                {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+
+        <form method="POST" x-data="{ toggle: false }"
+    class="grid gap-6 p-5 mx-auto mt-10 bg-white shadow-2xl shadow-primary-200 md:grid-cols-2 md:rounded-xl md:p-6 lg:p-8">
+    <div class="md:col-span-full">
+        <label for="links" class="block font-medium text-sm">
+    List of links         <span class="text-danger-600">*</span>
+    </label>
+
+<textarea id="links" class="border-gray-300 focus:border-primary-500 focus:ring-primary-500 rounded-lg shadow-sm mt-1 text-sm w-full" name="body" rows="4" required="required" autofocus="autofocus" placeholder="Paste list of links here"></textarea>
+
+        </div>
+
+    <div>
+        <label for="password" class="block font-medium text-sm">
+    Password </label>
+
+<input id="password" name="password" type="password" class="flex border-gray-300 text-sm focus:border-primary-500 focus:ring-primary-500 rounded-lg shadow-sm mt-1 py-2.5 px-3 w-full" placeholder="Protect with password">
+
+        </div>
+
+    <div>
+        <label for="title" class="block font-medium text-sm">
+    Title </label>
+
+<input id="title" name="name" type="text" class="flex border-gray-300 text-sm focus:border-primary-500 focus:ring-primary-500 rounded-lg shadow-sm mt-1 py-2.5 px-3 w-full" placeholder="Title for the links">
+
+        </div>
+
+    <div class="flex justify-center text-center md:col-span-full">
+        <button type="submit" class="btn px-5 py-3 text-base bg-primary-600 hover:bg-primary-700 text-white focus:outline-primary-400 focus:bg-primary-700 border-primary-600 border w-60 gap-x-2"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg>            Protect links</button>
+    </div>
+</form>
+    </div>
+</div>
+    
+    <!-- Page Content -->
+    <main class="container">
+        
+    </main>
+
+    <footer class="bg-white border-t border-primary-100">
+    <div class="container flex flex-col py-8">
+        
+        <div class="flex flex-wrap items-center justify-center w-full gap-4 py-4 md:justify-between md:flex-row-reverse">
+            <div class="flex text-gray-500 gap-x-3 [&>a:hover]:text-gray-800">
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+</svg>            <span class="sr-only">Telegram</span>
+        </a>
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>            <span class="sr-only">Facebook</span>
+        </a>
+    </div>
+            <p class="text-sm">
+                © 2024 SaveLinks. Made with ❤️ In Bangladesh.
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+        
+    
+</body>
+
+</html>
