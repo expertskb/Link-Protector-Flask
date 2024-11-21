@@ -1,6 +1,4 @@
-Here’s an updated `README.md` with system cloning, creating a virtual environment, and database migration steps included:
 
-```markdown
 # Link Protector (Flask)
 
 **Link Protector** is a Flask-based web application designed to enhance the security of shared links by providing protection mechanisms. This project leverages Flask's ecosystem and integrates with SQLAlchemy for database interactions.
