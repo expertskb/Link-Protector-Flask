@@ -17,7 +17,7 @@ def create_app():
     migrate.init_app(app, db)
     
 
-    from .views import home, view, files
+    from .views import home, view
     app.add_url_rule('/', 'home', home, methods=['GET', 'POST'])
     app.add_url_rule('/view/<fid>', 'view', view, methods=['GET'])
 
