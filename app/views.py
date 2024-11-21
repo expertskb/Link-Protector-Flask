@@ -1,4 +1,4 @@
-from flask import render_template, request, session, redirect, flash, send_from_directory, abort
+from flask import render_template, request, redirect, flash, send_from_directory, abort
 from . import db
 from .models import Link
 import random
