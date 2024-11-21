@@ -9,7 +9,7 @@ import os
 def home():
     if request.method == 'POST':
         name = request.form['name']
-        password = request.form['password']
+        password = request.form.get('password', '')
         body = request.form['body']
         
         if not body:
@@ -38,12 +38,18 @@ def view(fid):
     data.views += 1
     db.session.commit()
     
+    if not data.name:
+        name = "Protected Links"
+    else:
+        name = data.name
+    
     regExUrl = r'(ftp|https?):\/\/(\w+:?\w*@)?([^\s]+)(:[0-9]+)?(\/[^\s]*)?'
     
     content = data.data
     
-    links = re.sub(regExUrl, r'<a href="\g<0>" rel="external" target="_blank">\g<0></a><p>', content)
+    links = re.sub(regExUrl, r'<li class="py-2 border-b last:border-b-0"><a href="\g<0>" class="break-words" rel="nofollow noopener" target="_blank">\g<0></a></li>', content)
     
     return render_template('view.html', 
                            data=data,
-                           links=links)
+                           links=links,
+                           name=name)
