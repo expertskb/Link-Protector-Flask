@@ -1,3 +1,6 @@
+Here’s an updated `README.md` with system cloning, creating a virtual environment, and database migration steps included:
+
+```markdown
 # Link Protector (Flask)
 
 **Link Protector** is a Flask-based web application designed to enhance the security of shared links by providing protection mechanisms. This project leverages Flask's ecosystem and integrates with SQLAlchemy for database interactions.
@@ -32,3 +35,74 @@ This project requires Python 3.7 or newer.
 1. Clone the repository:
    ```bash
    git clone https://github.com/expertskb/Link-Protector-Flask.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Link-Protector-Flask
+   ```
+
+## Create a Virtual Environment
+
+1. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   ```
+
+2. Activate the virtual environment:
+   - On Linux/Mac:
+     ```bash
+     source venv/bin/activate
+     ```
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Database Migration
+
+1. Initialize the database migration environment:
+   ```bash
+   flask db init
+   ```
+
+2. Generate the migration script:
+   ```bash
+   flask db migrate -m "Initial migration"
+   ```
+
+3. Apply the migrations to set up the database:
+   ```bash
+   flask db upgrade
+   ```
+
+## Run the Application
+
+1. Start the Flask development server:
+   ```bash
+   flask run
+   ```
+
+2. Open your browser and navigate to `http://127.0.0.1:5000`.
+
+## Project Structure
+- `app/`: Contains the main application code.
+- `migrations/`: Alembic migration files.
+- `requirements.txt`: Python dependencies.
+- `README.md`: Project documentation.
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Developed with ❤️ using Flask.
+```
