@@ -83,7 +83,7 @@ This project requires Python 3.7 or newer.
 
 1. Start the Flask development server:
    ```bash
-   flask run
+   python app.py
    ```
 
 2. Open your browser and navigate to `http://127.0.0.1:5000`.
